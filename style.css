@@ -1,0 +1,241 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* navigation bar edit */
+#navbar {
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* navigation : logo and image edit */
+#logo img {
+    border-radius: 80px;
+    margin: 3px 4px;
+    padding: 2px;
+}
+
+/* navigatio0n: list style edit */
+#navbar ul {
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+
+#navbar ul li {
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+}
+
+#navbar ul li a {
+    color: white;
+    font-size: 20px;
+    display: block;
+    padding: 11px;
+    margin: 14px 17px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(251, 84, 1);
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+    text-decoration: underline;
+
+}
+
+/* light black background on top */
+#navbar::before {
+    content: "";
+    background-color: black;
+    z-index: -1;
+    height: 95%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+
+/* edit home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 170px;
+    height: 676px;
+}
+
+#home::before {
+    content: "";
+    background-size: cover;
+    background: url(https://img.freepik.com/free-photo/various-mexican-food-dark-background_23-2147740705.jpg?size=626&ext=jpg) no-repeat center center/cover;
+    z-index: -1;
+    height: 120%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0.80
+}
+
+#home h1 {
+    text-align: center;
+    color: rgb(0, 229, 255);
+    font-size: 2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* service portion editing */
+.service {
+    margin: 35px;
+    display: flex;
+}
+
+.box {
+    border: 2px solid red;
+    margin: 8px;
+    background-color: rgb(243, 236, 244);
+    padding: 4px;
+    border-radius: 25px;
+}
+
+.box img {
+    display: block;
+    margin: auto;
+    height: 150px;
+    /* width: 100px; */
+}
+
+/* utility class */
+.h-primary {
+    font-size: 3.6rem;
+    padding: 12px;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-secondary {
+    font-size: 2.6rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.h-centre {
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 31px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#h-clint {
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 12px;
+    color: rgb(8, 8, 8);
+    font-family: 'Roboto Slab', serif;
+
+}
+.h-primary-centre{
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 12px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+/* button design */
+.btn {
+    color: red;
+    background-color: chartreuse;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px solid black;
+
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+/* our clint section */
+.clint-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clint-section img {
+    height: 120px;
+    width: 212px
+}
+
+.clint {
+    background: url(https://th.bing.com/th/id/R.9215505d682ec7d7e5d8d9f361c9c3e3?rik=KPCJr8sgAungvw&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f18%2f4%2ff6SdYa.jpg&ehk=cq1hCv1JtLpCF40gnczGRCHjMcMVlnCCGg7NKrGHhuc%3d&risl=&pid=ImgRaw&r=0) no-repeat center center/cover;
+    background-size: cover;
+    height: 315px;
+    width: 100%;
+    z-index: -1;
+
+}
+/* contact us design */
+#contact{
+    position: relative;
+}
+#contact::before{
+    position: absolute;
+    background: url("https://wallup.net/wp-content/uploads/2018/09/26/242592-minimalistic-patterns-vectors-templates.jpg") no-repeat center center/cover;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+} 
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:30px ;
+}
+#contact-box input{
+    width: 100%;
+    padding: 0.6rem;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 1.9rem;
+
+}
+#contact-box label{
+    font-style: 'Roboto Slab', serif;
+    font-size: 30px;
+}
+#contact-box ::placeholder{
+    width: 350px;
+    padding: 10px;
+   
+}
+/* footer design */
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 8px 15px;
+    margin: 2px;
+}
